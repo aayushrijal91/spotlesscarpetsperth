@@ -6,3 +6,24 @@ header {
         background: linear-gradient(180deg, #F0F0F0 0%, rgba(240, 240, 240, 0.00) 100%);
     }
 }
+
+section.brands {
+    .brands_slider {
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-slide {
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+#cta_slider {
+    .slick-slide {
+        margin: 0 32px;
+    }
+}

@@ -8,6 +8,8 @@ $bcc_email = "";
 $no_reply_email = 'info@website.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
+$facebook = "";
+$instagram = "";
 
 function renderImg($filename, $folder, $classname = "")
 {

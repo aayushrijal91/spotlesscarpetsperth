@@ -23,3 +23,20 @@ $('#return-to-top').on('click', () => {
         scrollTop: 0
     }, 500);
 });
+
+$('#brands_slider').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    arrows: false,
+});
+
+$('#cta_slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 8000,
+    cssEase: 'linear',
+    variableWidth: true,
+});
