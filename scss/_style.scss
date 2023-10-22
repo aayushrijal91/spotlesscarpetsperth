@@ -79,3 +79,26 @@ section.brands {
         }
     }
 }
+
+section.form-wrapper {
+    background: imgUrl('form.png') center;
+    background-size: contain;
+
+    form {
+        .input-group {
+            label {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .form-control {
+                height: 48px;
+                border: 1px solid #e2e1e5;
+                width: 100%;
+                border-radius: 5px;
+                margin-top: 8px;
+                padding: 6px 16px;
+            }
+        }
+    }
+}
