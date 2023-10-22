@@ -1,13 +1,9 @@
 header {
-    background: imgUrl('banner.png');
+    background: imgUrl('banner.png') center top;
     background-size: cover;
 
     nav {
         background: linear-gradient(180deg, #F0F0F0 0%, rgba(240, 240, 240, 0.00) 100%);
-    }
-
-    @media screen and (max-width: 900px) {
-        background-position: center top;
     }
 }
 
@@ -87,6 +83,10 @@ section.brands {
 section.form-wrapper {
     background: imgUrl('form.png') center;
     background-size: contain;
+
+    @media screen and (min-width: 900px) and (max-width: 1600px) {
+        background: #1a1a1a;
+    }
 
     form {
         .input-group {

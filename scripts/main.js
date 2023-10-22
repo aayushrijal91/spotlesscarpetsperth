@@ -30,7 +30,7 @@ $('#brands_slider').slick({
     arrows: false,
     responsive: [
         {
-            breakpoint: 900,
+            breakpoint: 1100,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 2,

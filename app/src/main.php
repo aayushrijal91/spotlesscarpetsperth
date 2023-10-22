@@ -62,7 +62,7 @@
             </div>
 
             <div class="hidden md:flex flex-wrap justify-center">
-                <article class="w-full lg:w-10/12 rounded-full bg-primary py-3 md:py-4 lg:py-6 px-3 lg:px-14 flex flex-wrap justify-between items-center">
+                <article class="w-full xl:w-10/12 rounded-full bg-primary py-3 md:py-4 lg:py-6 px-3 lg:px-14 flex flex-wrap justify-between items-center">
                     <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Home</a>
                     <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">About</a>
                     <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Services</a>
@@ -79,11 +79,11 @@
     <section class="banner py-16 md:pt-24 lg:py-40">
         <div class="container">
             <div class="flex flex-wrap justify-end">
-                <article class="w-full md:w-10/12 lg:w-5/12 text-white">
+                <article class="w-full md:w-10/12 lg:w-8/12 xl:w-5/12 text-white">
                     <p class="text-[27px] capitalize">Flawless floors, Radiant Smiles</p>
                     <?= renderImg('banner-logo.png', 'logo', 'md:ml-[-70px]') ?>
                     <p class="font-grandmas-television text-7xl md:text-[102px] leading-none text-center md:text-start">Style</p>
-                    <div class="flex justify-center lg:hidden"><?= renderImg('promo-price.png', 'lib') ?></div>
+                    <div class="flex justify-center xl:hidden"><?= renderImg('promo-price.png', 'lib') ?></div>
                     <div class="flex justify-center md:pt-6">
                         <a href="#form" class="flex items-center font-grandmas-television text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
                     </div>
@@ -95,7 +95,7 @@
 
 <section class="service-type">
     <div class="container">
-        <div class="w-full lg:w-10/12 mx-auto pb-16 md:py-24">
+        <div class="w-full xl:w-10/12 mx-auto pb-16 md:py-24">
             <div class="flex flex-wrap justify-center md:justify-between gap-y-10">
                 <div class="w-fill md:w-1/3">
                     <div class="flex flex-col items-center justify-between h-full">
@@ -132,10 +132,10 @@
 <div class="container">
     <section class="about drop-shadow-2xl">
         <div class="flex flex-wrap">
-            <div class="w-full lg:w-6/12 flex justify-end bg-white rounded-[20px] md:rounded-[40px] lg:rounded-r-none md:rounded-l-[40px]">
-                <article class="pt-5 pb-12 w-full lg:w-11/12 px-4 md:px-10">
-                    <p class="font-vampiro-one text-4xl md:text-[50px] rotate-[-8.637deg] ml-[-10px] md:ml-[-30px] lg:ml-[-50px]">Elevate</p>
-                    <h2 class="font-grandmas-television text-2xl md:text-3xl lg:text-[44px] leading-none pt-8 md:pt-10">Your cleaning <span class="text-primary text-3xl md:text-4xl lg:text-[53px]">experience!</span></h2>
+            <div class="w-full xl:w-6/12 flex justify-end bg-white rounded-[20px] md:rounded-[40px] xl:rounded-r-none md:rounded-l-[40px]">
+                <article class="pt-5 pb-12 w-full xl:w-11/12 px-4 md:px-10">
+                    <p class="font-vampiro-one text-4xl md:text-[50px] rotate-[-8.637deg] ml-[-10px] md:ml-[-30px] xl:ml-[-50px]">Elevate</p>
+                    <h2 class="font-grandmas-television text-2xl md:text-3xl lg:text-[44px] leading-none pt-8 md:pt-10 lg:pt-20 xl:pt-10">Your cleaning <span class="text-primary text-3xl md:text-4xl lg:text-[53px]">experience!</span></h2>
                     <article class="pt-4 pb-10 text-base md:text-lg lg:text-xl font-medium">
                         <p class="pb-4">
                             Spotless Carpet Cleaning, a renowned name in Perth for the past 30 years, sets the standard for residential and commercial cleaning services. With a steadfast commitment to excellence, we redefine cleanliness and hygiene across Perth's diverse landscapes.
@@ -147,8 +147,8 @@
                     <a href="#form" class="inline-flex items-center font-grandmas-television text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
                 </article>
             </div>
-            <div class="w-full md:w-5/12 relative hidden lg:block">
-                <?= renderImg('tile-cleaning.png', 'lib', 'relative md:absolute h-full md:max-w-fit') ?>
+            <div class="w-full lg:w-5/12 relative hidden xl:block">
+                <?= renderImg('tile-cleaning.png', 'lib', 'relative xl:absolute h-full xl:max-w-fit') ?>
             </div>
         </div>
     </section>
@@ -156,15 +156,15 @@
 
 <section class="whyChoose pt-24 lg:pt-0">
     <div class="container">
-        <p class="font-vampiro-one text-3xl md:text-[50px] rotate-[-8.637deg] lg:ml-[-50px]">Why Choose</p>
+        <p class="font-vampiro-one text-3xl md:text-[50px] rotate-[-8.637deg] xl:ml-[-50px]">Why Choose</p>
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-grandmas-television text-center pt-8 md:pt-16 lg:pt-20"><span class="text-primary">Spotless</span> Carpet Cleaning?</h2>
 
         <div class="flex flex-wrap pt-9 gap-y-2 md:gap-y-4">
-            <div class="w-full md:w-1/2 lg:w-1/4 md:px-2">
+            <div class="w-full md:w-1/2 xl:w-1/4 md:px-2">
                 <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-1.jpg', 'lib', 'object-cover w-full h-full') ?>
 
-                    <p class="absolute bottom-0 group-hover:bottom-24 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8">
+                    <p class="absolute bottom-0 group-hover:bottom-24 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8 w-full">
                         Expertly trained & well-equipped professionals
                     </p>
 
@@ -174,11 +174,11 @@
                 </article>
             </div>
 
-            <div class="w-full md:w-1/2 lg:w-1/4 md:px-2">
+            <div class="w-full md:w-1/2 xl:w-1/4 md:px-2">
                 <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-2.jpg', 'lib', 'object-cover w-full h-full') ?>
 
-                    <p class="absolute bottom-0 group-hover:bottom-16 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8">
+                    <p class="absolute bottom-0 group-hover:bottom-16 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8 w-full">
                         Affordable Quality Work
                     </p>
 
@@ -188,11 +188,11 @@
                 </article>
             </div>
 
-            <div class="w-full md:w-1/2 lg:w-1/4 md:px-2">
+            <div class="w-full md:w-1/2 xl:w-1/4 md:px-2">
                 <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-3.jpg', 'lib', 'object-cover w-full h-full') ?>
 
-                    <p class="absolute bottom-0 group-hover:bottom-20 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8">
+                    <p class="absolute bottom-0 group-hover:bottom-20 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8 w-full">
                         Rapid and Efficient Cleaning Solutions
                     </p>
 
@@ -202,11 +202,11 @@
                 </article>
             </div>
 
-            <div class="w-full md:w-1/2 lg:w-1/4 md:px-2">
+            <div class="w-full md:w-1/2 xl:w-1/4 md:px-2">
                 <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-4.jpg', 'lib', 'object-cover w-full h-full') ?>
 
-                    <p class="absolute bottom-0 group-hover:bottom-32 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8">
+                    <p class="absolute bottom-0 group-hover:bottom-32 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8 w-full">
                         Cutting-Edge Cleaning Equipment
                     </p>
 
@@ -240,10 +240,10 @@
     </div>
 </section>
 
-<section class="form-wrapper flex justify-center">
-    <div class="w-full lg:w-11/12 bg-dark lg:bg-transparent pt-10 rounded-b-[40px]">
+<section class="form-wrapper flex justify-center lg:rounded-[40px] xl:rounded-none">
+    <div class="w-full xl:w-11/12 bg-dark lg:bg-transparent pt-10 lg:pt-0 rounded-b-[40px]">
         <div class="flex flex-wrap items-center gap-y-5">
-            <div class="w-full lg:w-7/12 px-4 md:px-10 lg:py-36">
+            <div class="w-full lg:w-7/12 px-4 md:px-10 xl:py-36">
                 <div class="flex flex-wrap justify-between items-center">
                     <div class="w-fit"><?= renderImg('footer-logo.png', 'logo', 'max-w-[181px]') ?></div>
                     <div class="w-fit">
@@ -277,32 +277,32 @@
                 <p class="text-center text-white capitalize text-xl md:text-2xl font-medium tracking-widest pt-6">Pristine Carpets, radient Space</p>
                 <div class="flex justify-center"><?= renderImg('form-logo.png', 'logo') ?></div>
                 <div class="flex flex-wrap justify-between items-center pt-5">
-                    <div class="w-1/5 lg:w-fit px-1 md:px-2"><?= renderImg('25-years.png', 'logo') ?></div>
-                    <div class="w-1/5 lg:w-fit px-1 md:px-2"><?= renderImg('australian-achiever.png', 'logo') ?></div>
-                    <div class="w-1/5 lg:w-fit px-1 md:px-2"><?= renderImg('best-services.png', 'logo') ?></div>
-                    <div class="w-1/5 lg:w-fit px-1 md:px-2"><?= renderImg('non-toxic.png', 'logo') ?></div>
-                    <div class="w-1/5 lg:w-fit px-1 md:px-2"><?= renderImg('satisfaction-guarantee.png', 'logo') ?></div>
+                    <div class="w-1/5 2xl:w-fit px-1 md:px-2"><?= renderImg('25-years.png', 'logo') ?></div>
+                    <div class="w-1/5 2xl:w-fit px-1 md:px-2"><?= renderImg('australian-achiever.png', 'logo') ?></div>
+                    <div class="w-1/5 2xl:w-fit px-1 md:px-2"><?= renderImg('best-services.png', 'logo') ?></div>
+                    <div class="w-1/5 2xl:w-fit px-1 md:px-2"><?= renderImg('non-toxic.png', 'logo') ?></div>
+                    <div class="w-1/5 2xl:w-fit px-1 md:px-2"><?= renderImg('satisfaction-guarantee.png', 'logo') ?></div>
                 </div>
             </div>
-            <div class="w-full lg:w-4/12">
+            <div class="w-full lg:w-5/12 2xl:w-4/12">
                 <form action="./src/form.php" method="POST" class="bg-white rounded-[31px] drop-shadow-lg overflow-hidden">
-                    <div class="py-10 px-4 md:p-14">
+                    <div class="py-10 px-4 md:p-14 lg:px-5 xl:p-14">
                         <div class="flex justify-center relative mb-10">
                             <h3 class="font-grandmas-television text-2xl md:text-3xl text-center">Get a <span class="text-primary">free</span> quote</h3>
                             <p class="absolute font-vampiro-one text-3xl md:text-[47px] rotate-[-8.637deg] bottom-[-30px] md:bottom-[-50px] right-0">today!</p>
                         </div>
 
-                        <div class="input-group mb-5 md:mb-8">
+                        <div class="input-group mb-5 md:mb-8 lg:mb-5 xl:mb-8">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
                         </div>
 
-                        <div class="input-group mb-5 md:mb-8">
+                        <div class="input-group mb-5 md:mb-8 lg:mb-5 xl:mb-8">
                             <label for="phone">Phone</label>
                             <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone" required>
                         </div>
 
-                        <div class="input-group mb-5 md:mb-8">
+                        <div class="input-group mb-5 md:mb-8 lg:mb-5 xl:mb-8">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
                         </div>
@@ -322,7 +322,7 @@
 
 <section class="faqs pt-24 pb-16 md:py-24">
     <div class="flex flex-wrap">
-        <div class="w-full lg:w-1/2 px-5">
+        <div class="w-full xl:w-1/2 px-5">
             <div class="flex justify-end">
                 <div class="flex justify-center">
                     <h2 class="text-dark font-grandmas-television text-3xl md:text-4xl lg:text-5xl relative">your<br />interest?
@@ -332,7 +332,7 @@
             </div>
             <?= renderImg('whats-your-interest.png', 'lib', 'w-full pt-10') ?>
         </div>
-        <div class="w-full lg:w-1/2 px-4 md:px-5 lg:px-14">
+        <div class="w-full xl:w-1/2 px-4 md:px-5 lg:px-14">
             <?php $faqs = [
                 [
                     'question' => 'How often should I have my carpets cleaned?',
@@ -356,7 +356,7 @@
                 ],
             ];
             ?>
-            <div class="w-full lg:w-10/12">
+            <div class="w-full 2xl:w-10/12">
                 <div class="accordion">
                     <?php foreach ($faqs as $index => $faq) : ?>
                         <article class="accordion-card py-5 md:py-8 <?= (count($faqs) - 1) == $index ? '' : 'border-b border-black' ?>">
@@ -498,18 +498,18 @@
 
         <div class="flex flex-wrap pt-9 gap-y-2 md:gap-y-3">
             <div class="w-full md:w-1/3 px-1.5">
-                <?= renderImg('projects_1.jpg', 'lib', 'h-full object-cover object-center') ?>
+                <?= renderImg('projects_1.jpg', 'lib', 'w-full h-full object-cover object-center') ?>
             </div>
             <div class="w-full md:w-1/3 px-1.5">
                 <div class="flex flex-wrap gap-y-3 h-full">
-                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_2.jpg", 'lib', 'h-full object-cover object-center') ?></div>
-                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_3.jpg", 'lib', 'h-full object-cover object-center') ?></div>
+                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_2.jpg", 'lib', 'w-full  h-full object-cover object-center') ?></div>
+                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_3.jpg", 'lib', 'w-full  h-full object-cover object-center') ?></div>
                 </div>
             </div>
             <div class="w-full md:w-1/3 px-1.5">
                 <div class="flex flex-wrap gap-y-3">
-                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_4.jpg", 'lib', 'h-full object-cover object-center') ?></div>
-                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_5.jpg", 'lib', 'h-full object-cover object-center') ?></div>
+                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_4.jpg", 'lib', 'w-full h-full object-cover object-center') ?></div>
+                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_5.jpg", 'lib', 'w-full h-full object-cover object-center') ?></div>
                 </div>
             </div>
         </div>
