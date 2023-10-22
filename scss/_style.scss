@@ -23,7 +23,59 @@ section.brands {
 }
 
 #cta_slider {
+    .slick-track {
+        display: flex;
+    }
+
     .slick-slide {
+        height: inherit;
         margin: 0 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#client_slider {
+    .slick-track {
+        display: flex;
+    }
+
+    .slick-slide {
+        height: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 32px;
+
+        .name {
+            height: 117px;
+            width: 117px;
+            background: #c6c6c6;
+            font-weight: 800;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            border-radius: 100%;
+        }
+
+        .info {
+            display: none;
+        }
+
+        &.slick-current {
+            .name {
+                height: 142px;
+                width: 142px;
+                background: #ED3D3D;
+            }
+
+            .info {
+                display: block;
+            }
+        }
     }
 }

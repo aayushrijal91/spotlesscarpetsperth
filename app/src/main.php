@@ -241,6 +241,202 @@
     </div>
 </section>
 
+<section class="faqs py-24">
+    <div class="flex flex-wrap">
+        <div class="w-1/2">
+            <div class="flex justify-end">
+                <div class="flex justify-center">
+                    <h2 class="text-dark font-grandmas-television text-5xl relative">your<br />interest?
+                        <p class="absolute font-vampiro-one text-primary text-[50px] rotate-[-8.637deg] top-[-40px] left-[-100px]">What's</p>
+                    </h2>
+                </div>
+            </div>
+            <?= renderImg('whats-your-interest.png', 'lib', 'w-full pt-10') ?>
+        </div>
+        <div class="w-1/2 px-14">
+            <?php $faqs = [
+                [
+                    'question' => 'How often should I have my carpets cleaned?',
+                    'answer' => 'On average household carpets should be cleaned at least once a year. In some cases (pets, children, allergies) carpets may require more frequent cleaning. Commercial cleaning services are usually performed more regularly due to the importance of image and hygiene in the workplace.'
+                ],
+                [
+                    'question' => 'How can I keep my carpets looking nice?',
+                    'answer' => 'On average household carpets should be cleaned at least once a year. In some cases (pets, children, allergies) carpets may require more frequent cleaning. Commercial cleaning services are usually performed more regularly due to the importance of image and hygiene in the workplace.'
+                ],
+                [
+                    'question' => 'Why do some carpet cleaners advertise extremely low prices and when they arrive to clean my carpets the price always increases?',
+                    'answer' => 'On average household carpets should be cleaned at least once a year. In some cases (pets, children, allergies) carpets may require more frequent cleaning. Commercial cleaning services are usually performed more regularly due to the importance of image and hygiene in the workplace.'
+                ],
+                [
+                    'question' => 'Do you guarantee your work?',
+                    'answer' => 'On average household carpets should be cleaned at least once a year. In some cases (pets, children, allergies) carpets may require more frequent cleaning. Commercial cleaning services are usually performed more regularly due to the importance of image and hygiene in the workplace.'
+                ],
+                [
+                    'question' => 'What services do you provide?',
+                    'answer' => 'On average household carpets should be cleaned at least once a year. In some cases (pets, children, allergies) carpets may require more frequent cleaning. Commercial cleaning services are usually performed more regularly due to the importance of image and hygiene in the workplace.'
+                ],
+            ];
+            ?>
+            <div class="w-10/12">
+                <div class="accordion">
+                    <?php foreach ($faqs as $index => $faq) : ?>
+                        <article class="accordion-card py-8 <?= (count($faqs) - 1) == $index ? '' : 'border-b border-black' ?>">
+                            <a href="javascript:void(0)" class="flex question items-center">
+                                <p class="text-[28px] font-bold flex-auto"><?= $faq['question'] ?></p>
+                                <div class="flex-none">
+                                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20.5" cy="20.5" r="20.5" fill="black" />
+                                        <path d="M12.6729 16.4001L20.8729 24.6001L29.0729 16.4001" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <p class="answer font-medium text-lg pt-3 <?= $index !== 0 ? 'hidden' : '' ?>"><?= $faq['answer'] ?></p>
+                        </article>
+                    <?php endforeach; ?>
+                </div>
+
+                <a href="#form" class="flex justify-center items-center text-center font-grandmas-television text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials py-16">
+    <div class="container">
+        <div class="flex justify-center">
+            <div class="flex justify-center">
+                <h2 class="text-dark font-grandmas-television text-5xl relative">happy clients
+                    <p class="absolute font-vampiro-one text-primary text-[50px] rotate-[-8.637deg] top-[-40px] left-[-100px]">Our</p>
+                </h2>
+            </div>
+        </div>
+
+        <div class="drop-shadow-xl">
+            <div class="bg-white py-12 mt-10 flex justify-center">
+                <div class="flex flex-wrap w-11/12">
+                    <div class="w-1/12 py-3">
+                        <svg width="72" height="57" viewBox="0 0 72 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.11163 48.8348C-0.676506 41.5387 0.00698853 32.1694 0.0285721 32.0625V3.5625C0.0285721 2.61767 0.40757 1.71153 1.0822 1.04343C1.75682 0.375334 2.67181 0 3.62589 0H25.2098C29.1776 0 32.4044 3.19556 32.4044 7.125V32.0625C32.4044 33.0073 32.0254 33.9135 31.3508 34.5816C30.6761 35.2497 29.7611 35.625 28.8071 35.625H17.7345C17.8105 37.3863 18.3419 39.0987 19.2778 40.5983C21.1052 43.4518 24.5479 45.4005 29.5157 46.3838L32.4044 46.9538V57H28.8071C18.7957 57 11.1587 54.2533 6.11163 48.8348ZM45.7072 48.8348C38.9155 41.5387 39.6026 32.1694 39.6242 32.0625V3.5625C39.6242 2.61767 40.0032 1.71153 40.6778 1.04343C41.3524 0.375334 42.2674 0 43.2215 0H64.8054C68.7732 0 72 3.19556 72 7.125V32.0625C72 33.0073 71.621 33.9135 70.9464 34.5816C70.2717 35.2497 69.3568 35.625 68.4027 35.625H57.3302C57.4062 37.3863 57.9375 39.0987 58.8734 40.5983C60.7008 43.4518 64.1435 45.4005 69.1114 46.3838L72 46.9538V57H68.4027C58.3914 57 50.7543 54.2533 45.7072 48.8348Z" fill="#F0F0F0" />
+                        </svg>
+                    </div>
+                    <div class="w-1/12 flex justify-center">
+                        <div class="w-[2px] bg-[#f0f0f0] min-h-[148px] h-full"></div>
+                    </div>
+                    <div class="w-10/12">
+                        <div id="testimonial_slider">
+                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <?= renderImg('triangle.png', 'lib') ?>
+            </div>
+        </div>
+
+        <div id="client_slider" class="pt-5">
+            <article>
+                <div class="name text-6xl">M</div>
+                <div class="info pl-7">
+                    <p class="text-3xl font-bold">Roberto</p>
+                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="name text-6xl">G</div>
+                <div class="info pl-7">
+                    <p class="text-3xl font-bold">Roberto</p>
+                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="name text-6xl">S</div>
+                <div class="info pl-7">
+                    <p class="text-3xl font-bold">Roberto</p>
+                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="name text-6xl">R</div>
+                <div class="info pl-7">
+                    <p class="text-3xl font-bold">Roberto</p>
+                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="name text-6xl">SM</div>
+                <div class="info pl-7">
+                    <p class="text-3xl font-bold">Roberto</p>
+                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="name text-6xl">CJ</div>
+                <div class="info pl-7">
+                    <p class="text-3xl font-bold">Roberto</p>
+                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="name text-6xl">M</div>
+                <div class="info pl-7">
+                    <p class="text-3xl font-bold">Roberto</p>
+                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="name text-6xl">R</div>
+                <div class="info pl-7">
+                    <p class="text-3xl font-bold">Roberto</p>
+                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="bg-dark py-20">
+    <div class="container">
+        <div class="flex justify-center">
+            <h2 class="text-white font-grandmas-television text-5xl text-center relative">Projects
+                <p class="absolute font-vampiro-one text-primary text-[50px] rotate-[-8.637deg] top-[-40px] left-[-100px]">Recent</p>
+            </h2>
+        </div>
+
+        <div class="flex flex-wrap pt-9">
+            <div class="w-1/3 px-1.5">
+                <?= renderImg('projects_1.jpg', 'lib', 'h-full object-cover object-center') ?>
+            </div>
+            <div class="w-1/3 px-1.5">
+                <div class="flex flex-wrap gap-y-3 h-full">
+                    <div class="w-full"><?= renderImg("projects_2.jpg", 'lib', 'h-full object-cover object-center') ?></div>
+                    <div class="w-full"><?= renderImg("projects_3.jpg", 'lib', 'h-full object-cover object-center') ?></div>
+                </div>
+            </div>
+            <div class="w-1/3 px-1.5">
+                <div class="flex flex-wrap gap-y-3">
+                    <div class="w-full"><?= renderImg("projects_4.jpg", 'lib', 'h-full object-cover object-center') ?></div>
+                    <div class="w-full"><?= renderImg("projects_5.jpg", 'lib', 'h-full object-cover object-center') ?></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="bg-primary">
     <div id="cta_slider" class="font-grandmas-television text-3xl text-white py-4">
         <p>Call Us Today on <a href=""><?= $phone_number ?></a></p>

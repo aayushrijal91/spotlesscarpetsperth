@@ -40,3 +40,26 @@ $('#cta_slider').slick({
     cssEase: 'linear',
     variableWidth: true,
 });
+
+$('.accordion-card .question').on('click', function () {
+    $(this).next('.answer').slideToggle();
+});
+
+$('#client_slider').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    arrows: false,
+    centerMode: true,
+    variableWidth: true,
+    asNavFor: '#testimonial_slider',
+    // autoplay: true,
+    focusOnSelect: true,
+});
+
+$('#testimonial_slider').slick({
+    draggable: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '#client_slider',
+})
