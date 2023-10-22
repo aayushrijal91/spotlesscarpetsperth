@@ -7,6 +7,9 @@
                 </div>
                 <div class="w-fit">
                     <div class="flex flex-wrap items-center gap-4 justify-center">
+                        <div class="w-[20px] relative">
+                            <div class="pulse pulsating-circle"></div>
+                        </div>
                         <div class="w-fit text-xl">
                             <p class="uppercase font-extrabold leading-none">We are open!</p>
                             <p class="font-medium">07:00-18:00</p>
@@ -63,20 +66,20 @@
 
             <div class="hidden md:flex flex-wrap justify-center">
                 <article class="w-full xl:w-10/12 rounded-full bg-primary py-3 md:py-4 lg:py-6 px-3 lg:px-14 flex flex-wrap justify-between items-center">
-                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Home</a>
-                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">About</a>
-                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Services</a>
+                    <a href="#home" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Home</a>
+                    <a href="#about" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">About</a>
+                    <a href="#services" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Services</a>
                     <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Pricing</a>
-                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Project</a>
-                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">FAQ</a>
-                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Testimonials</a>
-                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Contact Us</a>
+                    <a href="#projects" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Project</a>
+                    <a href="#faqs" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">FAQ</a>
+                    <a href="#testimonials" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Testimonials</a>
+                    <a href="#form" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Contact Us</a>
                 </article>
             </div>
         </div>
     </nav>
 
-    <section class="banner py-16 md:pt-24 lg:py-40">
+    <section class="banner py-16 md:pt-24 lg:py-40" id="home">
         <div class="container">
             <div class="flex flex-wrap justify-end">
                 <article class="w-full md:w-10/12 lg:w-8/12 xl:w-5/12 text-white">
@@ -130,7 +133,7 @@
 </section>
 
 <div class="container">
-    <section class="about drop-shadow-2xl">
+    <section class="about drop-shadow-2xl" id="about">
         <div class="flex flex-wrap">
             <div class="w-full xl:w-6/12 flex justify-end bg-white rounded-[20px] md:rounded-[40px] xl:rounded-r-none md:rounded-l-[40px]">
                 <article class="pt-5 pb-12 w-full xl:w-11/12 px-4 md:px-10">
@@ -154,7 +157,7 @@
     </section>
 </div>
 
-<section class="whyChoose pt-24 lg:pt-0">
+<section class="whyChoose pt-24 lg:pt-0" id="services">
     <div class="container">
         <p class="font-vampiro-one text-3xl md:text-[50px] rotate-[-8.637deg] xl:ml-[-50px]">Why Choose</p>
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-grandmas-television text-center pt-8 md:pt-16 lg:pt-20"><span class="text-primary">Spotless</span> Carpet Cleaning?</h2>
@@ -240,7 +243,7 @@
     </div>
 </section>
 
-<section class="form-wrapper flex justify-center lg:rounded-[40px] xl:rounded-none">
+<section class="form-wrapper flex justify-center lg:rounded-[40px] xl:rounded-none" id="form">
     <div class="w-full xl:w-11/12 bg-dark lg:bg-transparent pt-10 lg:pt-0 rounded-b-[40px]">
         <div class="flex flex-wrap items-center gap-y-5">
             <div class="w-full lg:w-7/12 px-4 md:px-10 xl:py-36">
@@ -320,7 +323,7 @@
     </div>
 </section>
 
-<section class="faqs pt-24 pb-16 md:py-24">
+<section class="faqs pt-24 pb-16 md:py-24" id="faqs">
     <div class="flex flex-wrap">
         <div class="w-full xl:w-1/2 px-5">
             <div class="flex justify-end">
@@ -359,11 +362,11 @@
             <div class="w-full 2xl:w-10/12">
                 <div class="accordion">
                     <?php foreach ($faqs as $index => $faq) : ?>
-                        <article class="accordion-card py-5 md:py-8 <?= (count($faqs) - 1) == $index ? '' : 'border-b border-black' ?>">
+                        <article class="accordion-card py-5 md:py-8 <?= (count($faqs) - 1) == $index ? '' : 'border-b border-black' ?> <?= $index == 0 ? 'active': '' ?>">
                             <a href="javascript:void(0)" class="flex question items-center">
                                 <p class="text-xl md:text-[28px] font-bold flex-auto"><?= $faq['question'] ?></p>
                                 <div class="flex-none">
-                                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="accordionArrow" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="20.5" cy="20.5" r="20.5" fill="black" />
                                         <path d="M12.6729 16.4001L20.8729 24.6001L29.0729 16.4001" stroke="white" stroke-width="2" stroke-linecap="round" />
                                     </svg>
@@ -381,7 +384,7 @@
     </div>
 </section>
 
-<section class="testimonials py-16">
+<section class="testimonials py-16" id="testimonials">
     <div class="container">
         <div class="flex justify-center">
             <div class="flex justify-center">
@@ -488,7 +491,7 @@
     </div>
 </section>
 
-<section class="bg-dark py-20">
+<section class="bg-dark py-20" id="projects">
     <div class="container">
         <div class="flex justify-center">
             <h2 class="text-white font-grandmas-television text-3xl md:text-5xl text-center relative">Projects

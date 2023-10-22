@@ -1,6 +1,6 @@
 // AOS.init({ duration: 1500 });
 
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
+document.querySelectorAll('a[href="#form"], a[href="#testimonials"], a[href="#faqs"], a[href="#projects"], a[href="#about"], a[href="#services"], a[href="#home"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -66,7 +66,11 @@ $('#cta_slider').slick({
 });
 
 $('.accordion-card .question').on('click', function () {
+    $('.accordion-card .answer').slideUp();
     $(this).next('.answer').slideToggle();
+    $('.accordion-card').removeClass('active');
+    $(this).parents('.accordion-card').addClass('active');
+
 });
 
 $('#client_slider').slick({

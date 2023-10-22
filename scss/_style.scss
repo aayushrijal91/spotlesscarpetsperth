@@ -106,3 +106,18 @@ section.form-wrapper {
         }
     }
 }
+
+.accordion {
+    .accordion-card {
+        .accordionArrow {
+            transform: rotate(-90deg);
+            transition: 0.2s all;
+        }
+
+        &.active {
+            .accordionArrow {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
