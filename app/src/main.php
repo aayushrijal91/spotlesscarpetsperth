@@ -1,12 +1,12 @@
 <header>
     <nav>
         <div class="container">
-            <div class="flex flex-wrap items-center justify-between py-6">
+            <div class="flex flex-wrap items-center justify-center md:justify-between py-6 gap-y-5">
                 <div class="w-fit">
                     <a href="./"><?= renderImg('logo.png', 'logo') ?></a>
                 </div>
                 <div class="w-fit">
-                    <div class="flex flex-wrap items-center gap-x-4">
+                    <div class="flex flex-wrap items-center gap-4 justify-center">
                         <div class="w-fit text-xl">
                             <p class="uppercase font-extrabold leading-none">We are open!</p>
                             <p class="font-medium">07:00-18:00</p>
@@ -43,8 +43,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-fit">
-                            <a href="" class="text-black text-lg font-extrabold">Get in Contact with Us</a>
+                        <div class="w-fit hidden md:block">
+                            <p class="text-black text-lg font-extrabold">Get in Contact with Us</p>
                         </div>
                         <div class="w-fit">
                             <a href="tel:<?= $phone_number ?>" class="text-white bg-primary h-[33px] text-lg font-bold flex items-center gap-x-2 px-4">
@@ -61,30 +61,30 @@
                 </div>
             </div>
 
-            <div class="flex flex-wrap justify-center">
-                <article class="w-10/12 rounded-full bg-primary py-6 px-14 flex flex-wrap justify-between items-center">
-                    <a href="#" class="text-lg font-bold text-white px-4">Home</a>
-                    <a href="#" class="text-lg font-bold text-white px-4">About</a>
-                    <a href="#" class="text-lg font-bold text-white px-4">Services</a>
-                    <a href="#" class="text-lg font-bold text-white px-4">Pricing</a>
-                    <a href="#" class="text-lg font-bold text-white px-4">Project</a>
-                    <a href="#" class="text-lg font-bold text-white px-4">FAQ</a>
-                    <a href="#" class="text-lg font-bold text-white px-4">Testimonials</a>
-                    <a href="#" class="text-lg font-bold text-white px-4">Contact Us</a>
+            <div class="hidden md:flex flex-wrap justify-center">
+                <article class="w-full md:w-10/12 rounded-full bg-primary py-3 md:py-6 px-3 md:px-14 flex flex-wrap justify-between items-center">
+                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Home</a>
+                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">About</a>
+                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Services</a>
+                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Pricing</a>
+                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Project</a>
+                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">FAQ</a>
+                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Testimonials</a>
+                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Contact Us</a>
                 </article>
             </div>
         </div>
     </nav>
 
-    <section class="banner py-40">
+    <section class="banner py-16 md:py-40">
         <div class="container">
             <div class="flex flex-wrap justify-end">
-                <article class="w-5/12 text-white">
+                <article class="w-full md:w-5/12 text-white">
                     <p class="text-[27px] capitalize">Flawless floors, Radiant Smiles</p>
-                    <?= renderImg('banner-logo.png', 'logo', 'ml-[-70px]') ?>
-                    <p class="font-grandmas-television text-[108px] leading-none">Style</p>
-
-                    <div class="flex justify-center pt-6">
+                    <?= renderImg('banner-logo.png', 'logo', 'md:ml-[-70px]') ?>
+                    <p class="font-grandmas-television text-7xl md:text-[102px] leading-none text-center md:text-start">Style</p>
+                    <div class="flex justify-center md:hidden"><?= renderImg('promo-price.png', 'lib') ?></div>
+                    <div class="flex justify-center md:pt-6">
                         <a href="#form" class="flex items-center font-grandmas-television text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
                     </div>
                 </article>
@@ -95,9 +95,9 @@
 
 <section class="service-type">
     <div class="container">
-        <div class="w-10/12 mx-auto py-24">
-            <div class="flex flex-wrap justify-between">
-                <div class="w-fit md:w-1/3">
+        <div class="w-full md:w-10/12 mx-auto pb-16 md:py-24">
+            <div class="flex flex-wrap justify-center md:justify-between gap-y-10">
+                <div class="w-fill md:w-1/3">
                     <div class="flex flex-col items-center justify-between h-full">
                         <?= renderImg('carpet-cleaning.png', 'lib') ?>
                         <article class="text-center uppercase text-2xl leading-none pt-4">
@@ -106,7 +106,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="w-fit md:w-1/3">
+                <div class="w-full md:w-1/3">
                     <div class="flex flex-col items-center justify-between h-full">
                         <?= renderImg('tile-and-grout.png', 'lib') ?>
                         <article class="text-center uppercase text-2xl leading-none pt-4">
@@ -115,7 +115,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="w-fit md:w-1/3">
+                <div class="w-full md:w-1/3">
                     <div class="flex flex-col items-center justify-between h-full">
                         <?= renderImg('wet-carpet.png', 'lib') ?>
                         <article class="text-center uppercase text-2xl leading-none pt-4">
@@ -132,12 +132,11 @@
 <div class="container">
     <section class="about drop-shadow-2xl">
         <div class="flex flex-wrap">
-            <div class="w-6/12 flex justify-end bg-white rounded-l-[40px]">
-                <article class="pt-5 pb-12 w-11/12 px-10">
-                    <p class="font-vampiro-one text-[50px] rotate-[-8.637deg] ml-[-50px]">Elevate</p>
-                    <h2 class="font-grandmas-television text-[44px] leading-none pt-10">Your cleaning <span class="text-primary text-[53px]">experience!</span></h2>
-                    <article class="pt-4 pb-10 text-xl font-medium">
-
+            <div class="w-full md:w-6/12 flex justify-end bg-white rounded-[20px] md:rounded-r-none md:rounded-l-[40px]">
+                <article class="pt-5 pb-12 w-full md:w-11/12 px-4 md:px-10">
+                    <p class="font-vampiro-one text-4xl md:text-[50px] rotate-[-8.637deg] ml-[-10px] md:ml-[-50px]">Elevate</p>
+                    <h2 class="font-grandmas-television text-2xl md:text-[44px] leading-none pt-8 md:pt-10">Your cleaning <span class="text-primary text-3xl md:text-[53px]">experience!</span></h2>
+                    <article class="pt-4 pb-10 text-base md:text-xl font-medium">
                         <p class="pb-4">
                             Spotless Carpet Cleaning, a renowned name in Perth for the past 30 years, sets the standard for residential and commercial cleaning services. With a steadfast commitment to excellence, we redefine cleanliness and hygiene across Perth's diverse landscapes.
                         </p>
@@ -148,21 +147,21 @@
                     <a href="#form" class="inline-flex items-center font-grandmas-television text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
                 </article>
             </div>
-            <div class="w-5/12 relative">
-                <?= renderImg('tile-cleaning.png', 'lib', 'absolute h-full max-w-fit') ?>
+            <div class="w-full md:w-5/12 relative hidden md:block">
+                <?= renderImg('tile-cleaning.png', 'lib', 'relative md:absolute h-full md:max-w-fit') ?>
             </div>
         </div>
     </section>
 </div>
 
-<section class="section">
+<section class="whyChoose pt-24 md:pt-0">
     <div class="container">
-        <p class="font-vampiro-one text-[50px] rotate-[-8.637deg] ml-[-50px]">Why Choose</p>
-        <h2 class="text-5xl font-grandmas-television text-center pt-20"><span class="text-primary">Spotless</span> Carpet Cleaning?</h2>
+        <p class="font-vampiro-one text-3xl md:text-[50px] rotate-[-8.637deg] md:ml-[-50px]">Why Choose</p>
+        <h2 class="text-3xl md:text-5xl font-grandmas-television text-center pt-8 md:pt-20"><span class="text-primary">Spotless</span> Carpet Cleaning?</h2>
 
-        <div class="flex flex-wrap pt-9">
-            <div class="w-1/4 px-2">
-                <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center hover:scale-105 duration-300">
+        <div class="flex flex-wrap pt-9 gap-y-2">
+            <div class="w-full md:w-1/4 md:px-2">
+                <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-1.jpg', 'lib', 'object-cover w-full h-full') ?>
 
                     <p class="absolute bottom-0 group-hover:bottom-24 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8">
@@ -175,8 +174,8 @@
                 </article>
             </div>
 
-            <div class="w-1/4 px-2">
-                <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center hover:scale-105 duration-300">
+            <div class="w-full md:w-1/4 md:px-2">
+                <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-2.jpg', 'lib', 'object-cover w-full h-full') ?>
 
                     <p class="absolute bottom-0 group-hover:bottom-16 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8">
@@ -189,8 +188,8 @@
                 </article>
             </div>
 
-            <div class="w-1/4 px-2">
-                <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center hover:scale-105 duration-300">
+            <div class="w-full md:w-1/4 md:px-2">
+                <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-3.jpg', 'lib', 'object-cover w-full h-full') ?>
 
                     <p class="absolute bottom-0 group-hover:bottom-20 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8">
@@ -203,8 +202,8 @@
                 </article>
             </div>
 
-            <div class="w-1/4 px-2">
-                <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center hover:scale-105 duration-300">
+            <div class="w-full md:w-1/4 md:px-2">
+                <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-4.jpg', 'lib', 'object-cover w-full h-full') ?>
 
                     <p class="absolute bottom-0 group-hover:bottom-32 duration-300 text-3xl font-extrabold px-4 py-6 capitalize leading-8">
@@ -220,12 +219,12 @@
     </div>
 </section>
 
-<section class="brands pt-32 pb-24">
+<section class="brands py-16 md:pt-32 md:pb-24">
     <div class="container">
         <div class="flex justify-center">
-            <h2 class="font-grandmas-television text-5xl text-center relative">
+            <h2 class="font-grandmas-television text-3xl md:text-5xl text-center relative">
                 Brands we <span class="text-primary">work</span>
-                <p class="absolute font-vampiro-one text-[50px] rotate-[-8.637deg] bottom-[-30px] right-[-100px]">with</p>
+                <p class="absolute font-vampiro-one text-3xl md:text-[50px] rotate-[-8.637deg] bottom-[-30px] right-10 md:right-[-100px]">with</p>
             </h2>
         </div>
 
@@ -242,9 +241,9 @@
 </section>
 
 <section class="form-wrapper flex justify-center">
-    <div class="w-11/12">
-        <div class="flex flex-wrap items-center">
-            <div class="w-7/12 px-10 py-36">
+    <div class="w-full md:w-11/12 bg-dark md:bg-transparent pt-10 rounded-b-[40px]">
+        <div class="flex flex-wrap items-center gap-y-5">
+            <div class="w-full md:w-7/12 px-4 md:px-10 md:py-36">
                 <div class="flex flex-wrap justify-between items-center">
                     <div class="w-fit"><?= renderImg('footer-logo.png', 'logo', 'max-w-[181px]') ?></div>
                     <div class="w-fit">
@@ -275,35 +274,35 @@
                         </div>
                     </div>
                 </div>
-                <p class="text-center text-white capitalize text-2xl font-medium tracking-widest pt-6">Pristine Carpets, radient Space</p>
+                <p class="text-center text-white capitalize text-xl md:text-2xl font-medium tracking-widest pt-6">Pristine Carpets, radient Space</p>
                 <div class="flex justify-center"><?= renderImg('form-logo.png', 'logo') ?></div>
                 <div class="flex flex-wrap justify-between items-center pt-5">
-                    <div><?= renderImg('25-years.png', 'logo') ?></div>
-                    <div><?= renderImg('australian-achiever.png', 'logo') ?></div>
-                    <div><?= renderImg('best-services.png', 'logo') ?></div>
-                    <div><?= renderImg('non-toxic.png', 'logo') ?></div>
-                    <div><?= renderImg('satisfaction-guarantee.png', 'logo') ?></div>
+                    <div class="w-1/5 md:w-fit px-1"><?= renderImg('25-years.png', 'logo') ?></div>
+                    <div class="w-1/5 md:w-fit px-1"><?= renderImg('australian-achiever.png', 'logo') ?></div>
+                    <div class="w-1/5 md:w-fit px-1"><?= renderImg('best-services.png', 'logo') ?></div>
+                    <div class="w-1/5 md:w-fit px-1"><?= renderImg('non-toxic.png', 'logo') ?></div>
+                    <div class="w-1/5 md:w-fit px-1"><?= renderImg('satisfaction-guarantee.png', 'logo') ?></div>
                 </div>
             </div>
-            <div class="w-4/12">
+            <div class="w-full md:w-4/12">
                 <form action="./src/form.php" method="POST" class="bg-white rounded-[31px] drop-shadow-lg overflow-hidden">
-                    <div class="p-14">
+                    <div class="py-10 px-4 md:p-14">
                         <div class="flex justify-center relative mb-10">
-                            <h3 class="font-grandmas-television text-3xl text-center">Get a <span class="text-primary">free</span> quote</h3>
-                            <p class="absolute font-vampiro-one text-[47px] rotate-[-8.637deg] bottom-[-50px] right-0">today!</p>
+                            <h3 class="font-grandmas-television text-2xl md:text-3xl text-center">Get a <span class="text-primary">free</span> quote</h3>
+                            <p class="absolute font-vampiro-one text-3xl md:text-[47px] rotate-[-8.637deg] bottom-[-30px] md:bottom-[-50px] right-0">today!</p>
                         </div>
 
-                        <div class="input-group mb-8">
+                        <div class="input-group mb-5 md:mb-8">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
                         </div>
 
-                        <div class="input-group mb-8">
+                        <div class="input-group mb-5 md:mb-8">
                             <label for="phone">Phone</label>
                             <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone" required>
                         </div>
 
-                        <div class="input-group mb-8">
+                        <div class="input-group mb-5 md:mb-8">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
                         </div>
@@ -321,19 +320,19 @@
     </div>
 </section>
 
-<section class="faqs py-24">
+<section class="faqs pt-24 pb-16 md:py-24">
     <div class="flex flex-wrap">
-        <div class="w-1/2">
+        <div class="w-full md:w-1/2">
             <div class="flex justify-end">
                 <div class="flex justify-center">
-                    <h2 class="text-dark font-grandmas-television text-5xl relative">your<br />interest?
-                        <p class="absolute font-vampiro-one text-primary text-[50px] rotate-[-8.637deg] top-[-40px] left-[-100px]">What's</p>
+                    <h2 class="text-dark font-grandmas-television text-3xl md:text-5xl relative">your<br />interest?
+                        <p class="absolute font-vampiro-one text-primary text-3xl md:text-[50px] rotate-[-8.637deg] top-[-40px] left-[-100px]">What's</p>
                     </h2>
                 </div>
             </div>
             <?= renderImg('whats-your-interest.png', 'lib', 'w-full pt-10') ?>
         </div>
-        <div class="w-1/2 px-14">
+        <div class="w-full md:w-1/2 px-4 md:px-14">
             <?php $faqs = [
                 [
                     'question' => 'How often should I have my carpets cleaned?',
@@ -357,12 +356,12 @@
                 ],
             ];
             ?>
-            <div class="w-10/12">
+            <div class="w-full md:w-10/12">
                 <div class="accordion">
                     <?php foreach ($faqs as $index => $faq) : ?>
-                        <article class="accordion-card py-8 <?= (count($faqs) - 1) == $index ? '' : 'border-b border-black' ?>">
+                        <article class="accordion-card py-5 md:py-8 <?= (count($faqs) - 1) == $index ? '' : 'border-b border-black' ?>">
                             <a href="javascript:void(0)" class="flex question items-center">
-                                <p class="text-[28px] font-bold flex-auto"><?= $faq['question'] ?></p>
+                                <p class="text-xl md:text-[28px] font-bold flex-auto"><?= $faq['question'] ?></p>
                                 <div class="flex-none">
                                     <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="20.5" cy="20.5" r="20.5" fill="black" />
@@ -371,7 +370,7 @@
                                 </div>
                             </a>
 
-                            <p class="answer font-medium text-lg pt-3 <?= $index !== 0 ? 'hidden' : '' ?>"><?= $faq['answer'] ?></p>
+                            <p class="answer font-medium text-base md:text-lg pt-3 <?= $index !== 0 ? 'hidden' : '' ?>"><?= $faq['answer'] ?></p>
                         </article>
                     <?php endforeach; ?>
                 </div>
@@ -386,32 +385,32 @@
     <div class="container">
         <div class="flex justify-center">
             <div class="flex justify-center">
-                <h2 class="text-dark font-grandmas-television text-5xl relative">happy clients
-                    <p class="absolute font-vampiro-one text-primary text-[50px] rotate-[-8.637deg] top-[-40px] left-[-100px]">Our</p>
+                <h2 class="text-dark font-grandmas-television text-3xl md:text-5xl relative">happy clients
+                    <p class="absolute font-vampiro-one text-primary text-3xl md:text-[50px] rotate-[-8.637deg] top-[-40px] md:left-[-100px]">Our</p>
                 </h2>
             </div>
         </div>
 
         <div class="drop-shadow-xl">
-            <div class="bg-white py-12 mt-10 flex justify-center">
+            <div class="bg-white py-6 md:py-12 mt-10 flex justify-center">
                 <div class="flex flex-wrap w-11/12">
-                    <div class="w-1/12 py-3">
+                    <div class="w-full md:w-1/12 py-3">
                         <svg width="72" height="57" viewBox="0 0 72 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.11163 48.8348C-0.676506 41.5387 0.00698853 32.1694 0.0285721 32.0625V3.5625C0.0285721 2.61767 0.40757 1.71153 1.0822 1.04343C1.75682 0.375334 2.67181 0 3.62589 0H25.2098C29.1776 0 32.4044 3.19556 32.4044 7.125V32.0625C32.4044 33.0073 32.0254 33.9135 31.3508 34.5816C30.6761 35.2497 29.7611 35.625 28.8071 35.625H17.7345C17.8105 37.3863 18.3419 39.0987 19.2778 40.5983C21.1052 43.4518 24.5479 45.4005 29.5157 46.3838L32.4044 46.9538V57H28.8071C18.7957 57 11.1587 54.2533 6.11163 48.8348ZM45.7072 48.8348C38.9155 41.5387 39.6026 32.1694 39.6242 32.0625V3.5625C39.6242 2.61767 40.0032 1.71153 40.6778 1.04343C41.3524 0.375334 42.2674 0 43.2215 0H64.8054C68.7732 0 72 3.19556 72 7.125V32.0625C72 33.0073 71.621 33.9135 70.9464 34.5816C70.2717 35.2497 69.3568 35.625 68.4027 35.625H57.3302C57.4062 37.3863 57.9375 39.0987 58.8734 40.5983C60.7008 43.4518 64.1435 45.4005 69.1114 46.3838L72 46.9538V57H68.4027C58.3914 57 50.7543 54.2533 45.7072 48.8348Z" fill="#F0F0F0" />
                         </svg>
                     </div>
-                    <div class="w-1/12 flex justify-center">
+                    <div class="w-1/12 hidden md:flex justify-center">
                         <div class="w-[2px] bg-[#f0f0f0] min-h-[148px] h-full"></div>
                     </div>
-                    <div class="w-10/12">
+                    <div class="w-full md:w-10/12">
                         <div id="testimonial_slider">
-                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
                         </div>
                     </div>
                 </div>
@@ -492,25 +491,25 @@
 <section class="bg-dark py-20">
     <div class="container">
         <div class="flex justify-center">
-            <h2 class="text-white font-grandmas-television text-5xl text-center relative">Projects
-                <p class="absolute font-vampiro-one text-primary text-[50px] rotate-[-8.637deg] top-[-40px] left-[-100px]">Recent</p>
+            <h2 class="text-white font-grandmas-television text-3xl md:text-5xl text-center relative">Projects
+                <p class="absolute font-vampiro-one text-primary text-3xl md:text-[50px] rotate-[-8.637deg] top-[-40px] md:left-[-100px]">Recent</p>
             </h2>
         </div>
 
-        <div class="flex flex-wrap pt-9">
-            <div class="w-1/3 px-1.5">
+        <div class="flex flex-wrap pt-9 gap-y-2 md:gap-y-3">
+            <div class="w-full md:w-1/3 px-1.5">
                 <?= renderImg('projects_1.jpg', 'lib', 'h-full object-cover object-center') ?>
             </div>
-            <div class="w-1/3 px-1.5">
+            <div class="w-full md:w-1/3 px-1.5">
                 <div class="flex flex-wrap gap-y-3 h-full">
-                    <div class="w-full"><?= renderImg("projects_2.jpg", 'lib', 'h-full object-cover object-center') ?></div>
-                    <div class="w-full"><?= renderImg("projects_3.jpg", 'lib', 'h-full object-cover object-center') ?></div>
+                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_2.jpg", 'lib', 'h-full object-cover object-center') ?></div>
+                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_3.jpg", 'lib', 'h-full object-cover object-center') ?></div>
                 </div>
             </div>
-            <div class="w-1/3 px-1.5">
+            <div class="w-full md:w-1/3 px-1.5">
                 <div class="flex flex-wrap gap-y-3">
-                    <div class="w-full"><?= renderImg("projects_4.jpg", 'lib', 'h-full object-cover object-center') ?></div>
-                    <div class="w-full"><?= renderImg("projects_5.jpg", 'lib', 'h-full object-cover object-center') ?></div>
+                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_4.jpg", 'lib', 'h-full object-cover object-center') ?></div>
+                    <div class="w-1/2 md:w-full px-1 md:px-0"><?= renderImg("projects_5.jpg", 'lib', 'h-full object-cover object-center') ?></div>
                 </div>
             </div>
         </div>
@@ -518,8 +517,8 @@
 </section>
 
 <section class="bg-primary">
-    <div id="cta_slider" class="font-grandmas-television text-3xl text-white py-4">
-        <p>Call Us Today on <a href=""><?= $phone_number ?></a></p>
+    <div id="cta_slider" class="font-grandmas-television text-lg md:text-3xl text-white py-4">
+        <p>Call Us Today on <a href="tel:<?= $phone_number ?>" class="pl-2"><?= $phone_number ?></a></p>
         <p>Get Free quote today</p>
         <p>Carpet Cleaning Start From $89</p>
     </div>
@@ -527,12 +526,12 @@
 
 <section class="location py-16 bg-dark">
     <div class="container">
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap gap-y-5">
             <div class="w-full lg:w-1/2 lg:px-2">
                 <article class="">
                     <a href="./"><?= renderImg('footer-logo.png', 'logo') ?></a>
-                    <div class="py-9">
-                        <table cellspacing="0" cellpadding="0" class="text-white">
+                    <div class="py-5 md:py-9">
+                        <table cellspacing="0" cellpadding="0" class="text-white text-sm md:text-base">
                             <tbody>
                                 <tr>
                                     <td>
@@ -577,7 +576,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <ol class="text-white list-decimal py-8 pl-5">
+                    <ol class="text-white list-decimal py-6 md:py-8 pl-5 text-sm md:text-base">
                         <li>When our technicians arrive at your premises they will inspect and measure the areas you have told us about. The technician will then confirm your quoted price and inspect the carpet and stains before work commences.</li>
                         <li>There are certain stains, that are impossible to be removed and certain conditions caused by wear and tear that are not apparent until completion of cleaning.</li>
                         <li>All complaints if any must be reported within 24hrs after cleaning.</li>
@@ -590,7 +589,7 @@
                         <li>Our minimum charge for carpet and everything else is $89</li>
                     </ol>
                     <div class="flex flex-wrap gap-x-2">
-                        <p class="w-fit text-white font-bold text-lg">Get in Contact with Us on</p>
+                        <p class="w-fit text-white font-bold text-base md:text-lg capitalize">Get in Contact with Us on</p>
                         <div class="w-fit">
                             <a href="<?= $facebook ?>" target="_blank">
                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -623,7 +622,7 @@
                 </article>
             </div>
             <div class="w-full lg:w-1/2 lg:px-2">
-                <iframe class="w-full h-full rounded-[20px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432910.82949746907!2d115.63189744744871!3d-32.03905537345496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth%20WA!5e0!3m2!1sen!2sau!4v1697799195512!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="w-full min-h-[300px] h-full rounded-[20px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432910.82949746907!2d115.63189744744871!3d-32.03905537345496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth%20WA!5e0!3m2!1sen!2sau!4v1697799195512!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>

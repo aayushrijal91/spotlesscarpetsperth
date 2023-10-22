@@ -28,6 +28,19 @@ $('#brands_slider').slick({
     slidesToShow: 7,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                speed: 3000,
+                autoplaySpeed: 0,
+                autoplay: true,
+                cssEase: 'linear'
+            }
+        }
+    ]
 });
 
 $('#cta_slider').slick({

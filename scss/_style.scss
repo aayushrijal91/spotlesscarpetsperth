@@ -5,6 +5,10 @@ header {
     nav {
         background: linear-gradient(180deg, #F0F0F0 0%, rgba(240, 240, 240, 0.00) 100%);
     }
+
+    @media screen and (max-width: 540px) {
+        background-position: center top;
+    }
 }
 
 section.brands {
