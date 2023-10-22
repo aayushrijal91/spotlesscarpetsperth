@@ -6,7 +6,7 @@
 			</div>
 
 			<div class="w-full md:w-fit">
-				<p class="capitalize text-gray-500 font-medium text-xs md:text-base text-center">Copyright <?= date('Y') ?> <span class="px-2 md:px-6">|</span> <?= $site ?> <span class="px-2 md:px-6">|</span> All Rights Reserved</p>
+				<p class="capitalize text-gray-500 font-medium text-xs md:text-sm lg:text-base text-center">Copyright <?= date('Y') ?> <span class="px-2 md:px-3 lg:px-6">|</span> <?= $site ?> <span class="px-2 md:px-3 lg:px-6">|</span> All Rights Reserved</p>
 			</div>
 		</div>
 	</div>

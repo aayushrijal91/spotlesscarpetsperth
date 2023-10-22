@@ -1,7 +1,7 @@
 <header>
     <nav>
         <div class="container">
-            <div class="flex flex-wrap items-center justify-center md:justify-between py-6 gap-y-5">
+            <div class="flex flex-wrap items-center justify-center lg:justify-between py-6 gap-y-5">
                 <div class="w-fit">
                     <a href="./"><?= renderImg('logo.png', 'logo') ?></a>
                 </div>
@@ -62,28 +62,28 @@
             </div>
 
             <div class="hidden md:flex flex-wrap justify-center">
-                <article class="w-full md:w-10/12 rounded-full bg-primary py-3 md:py-6 px-3 md:px-14 flex flex-wrap justify-between items-center">
-                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Home</a>
-                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">About</a>
-                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Services</a>
-                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Pricing</a>
-                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Project</a>
-                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">FAQ</a>
-                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Testimonials</a>
-                    <a href="#" class="text-xs md:text-lg font-bold text-white px-4">Contact Us</a>
+                <article class="w-full lg:w-10/12 rounded-full bg-primary py-3 md:py-4 lg:py-6 px-3 lg:px-14 flex flex-wrap justify-between items-center">
+                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Home</a>
+                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">About</a>
+                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Services</a>
+                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Pricing</a>
+                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Project</a>
+                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">FAQ</a>
+                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Testimonials</a>
+                    <a href="#" class="text-xs md:text-sm lg:text-lg font-bold text-white px-3 lg:px-4">Contact Us</a>
                 </article>
             </div>
         </div>
     </nav>
 
-    <section class="banner py-16 md:py-40">
+    <section class="banner py-16 md:pt-24 lg:py-40">
         <div class="container">
             <div class="flex flex-wrap justify-end">
-                <article class="w-full md:w-5/12 text-white">
+                <article class="w-full md:w-10/12 lg:w-5/12 text-white">
                     <p class="text-[27px] capitalize">Flawless floors, Radiant Smiles</p>
                     <?= renderImg('banner-logo.png', 'logo', 'md:ml-[-70px]') ?>
                     <p class="font-grandmas-television text-7xl md:text-[102px] leading-none text-center md:text-start">Style</p>
-                    <div class="flex justify-center md:hidden"><?= renderImg('promo-price.png', 'lib') ?></div>
+                    <div class="flex justify-center lg:hidden"><?= renderImg('promo-price.png', 'lib') ?></div>
                     <div class="flex justify-center md:pt-6">
                         <a href="#form" class="flex items-center font-grandmas-television text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
                     </div>
@@ -95,7 +95,7 @@
 
 <section class="service-type">
     <div class="container">
-        <div class="w-full md:w-10/12 mx-auto pb-16 md:py-24">
+        <div class="w-full lg:w-10/12 mx-auto pb-16 md:py-24">
             <div class="flex flex-wrap justify-center md:justify-between gap-y-10">
                 <div class="w-fill md:w-1/3">
                     <div class="flex flex-col items-center justify-between h-full">
@@ -132,11 +132,11 @@
 <div class="container">
     <section class="about drop-shadow-2xl">
         <div class="flex flex-wrap">
-            <div class="w-full md:w-6/12 flex justify-end bg-white rounded-[20px] md:rounded-r-none md:rounded-l-[40px]">
-                <article class="pt-5 pb-12 w-full md:w-11/12 px-4 md:px-10">
-                    <p class="font-vampiro-one text-4xl md:text-[50px] rotate-[-8.637deg] ml-[-10px] md:ml-[-50px]">Elevate</p>
-                    <h2 class="font-grandmas-television text-2xl md:text-[44px] leading-none pt-8 md:pt-10">Your cleaning <span class="text-primary text-3xl md:text-[53px]">experience!</span></h2>
-                    <article class="pt-4 pb-10 text-base md:text-xl font-medium">
+            <div class="w-full lg:w-6/12 flex justify-end bg-white rounded-[20px] md:rounded-[40px] lg:rounded-r-none md:rounded-l-[40px]">
+                <article class="pt-5 pb-12 w-full lg:w-11/12 px-4 md:px-10">
+                    <p class="font-vampiro-one text-4xl md:text-[50px] rotate-[-8.637deg] ml-[-10px] md:ml-[-30px] lg:ml-[-50px]">Elevate</p>
+                    <h2 class="font-grandmas-television text-2xl md:text-3xl lg:text-[44px] leading-none pt-8 md:pt-10">Your cleaning <span class="text-primary text-3xl md:text-4xl lg:text-[53px]">experience!</span></h2>
+                    <article class="pt-4 pb-10 text-base md:text-lg lg:text-xl font-medium">
                         <p class="pb-4">
                             Spotless Carpet Cleaning, a renowned name in Perth for the past 30 years, sets the standard for residential and commercial cleaning services. With a steadfast commitment to excellence, we redefine cleanliness and hygiene across Perth's diverse landscapes.
                         </p>
@@ -147,20 +147,20 @@
                     <a href="#form" class="inline-flex items-center font-grandmas-television text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
                 </article>
             </div>
-            <div class="w-full md:w-5/12 relative hidden md:block">
+            <div class="w-full md:w-5/12 relative hidden lg:block">
                 <?= renderImg('tile-cleaning.png', 'lib', 'relative md:absolute h-full md:max-w-fit') ?>
             </div>
         </div>
     </section>
 </div>
 
-<section class="whyChoose pt-24 md:pt-0">
+<section class="whyChoose pt-24 lg:pt-0">
     <div class="container">
-        <p class="font-vampiro-one text-3xl md:text-[50px] rotate-[-8.637deg] md:ml-[-50px]">Why Choose</p>
-        <h2 class="text-3xl md:text-5xl font-grandmas-television text-center pt-8 md:pt-20"><span class="text-primary">Spotless</span> Carpet Cleaning?</h2>
+        <p class="font-vampiro-one text-3xl md:text-[50px] rotate-[-8.637deg] lg:ml-[-50px]">Why Choose</p>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-grandmas-television text-center pt-8 md:pt-16 lg:pt-20"><span class="text-primary">Spotless</span> Carpet Cleaning?</h2>
 
-        <div class="flex flex-wrap pt-9 gap-y-2">
-            <div class="w-full md:w-1/4 md:px-2">
+        <div class="flex flex-wrap pt-9 gap-y-2 md:gap-y-4">
+            <div class="w-full md:w-1/2 lg:w-1/4 md:px-2">
                 <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-1.jpg', 'lib', 'object-cover w-full h-full') ?>
 
@@ -174,7 +174,7 @@
                 </article>
             </div>
 
-            <div class="w-full md:w-1/4 md:px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 md:px-2">
                 <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-2.jpg', 'lib', 'object-cover w-full h-full') ?>
 
@@ -188,7 +188,7 @@
                 </article>
             </div>
 
-            <div class="w-full md:w-1/4 md:px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 md:px-2">
                 <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-3.jpg', 'lib', 'object-cover w-full h-full') ?>
 
@@ -202,7 +202,7 @@
                 </article>
             </div>
 
-            <div class="w-full md:w-1/4 md:px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 md:px-2">
                 <article class="rounded-2xl h-[525px] bg-slate-100 w-full relative overflow-hidden group text-white text-center md:hover:scale-105 duration-300">
                     <?= renderImg('why-us-4.jpg', 'lib', 'object-cover w-full h-full') ?>
 
@@ -222,7 +222,7 @@
 <section class="brands py-16 md:pt-32 md:pb-24">
     <div class="container">
         <div class="flex justify-center">
-            <h2 class="font-grandmas-television text-3xl md:text-5xl text-center relative">
+            <h2 class="font-grandmas-television text-3xl md:text-4xl lg:text-5xl text-center relative">
                 Brands we <span class="text-primary">work</span>
                 <p class="absolute font-vampiro-one text-3xl md:text-[50px] rotate-[-8.637deg] bottom-[-30px] right-10 md:right-[-100px]">with</p>
             </h2>
@@ -241,9 +241,9 @@
 </section>
 
 <section class="form-wrapper flex justify-center">
-    <div class="w-full md:w-11/12 bg-dark md:bg-transparent pt-10 rounded-b-[40px]">
+    <div class="w-full lg:w-11/12 bg-dark lg:bg-transparent pt-10 rounded-b-[40px]">
         <div class="flex flex-wrap items-center gap-y-5">
-            <div class="w-full md:w-7/12 px-4 md:px-10 md:py-36">
+            <div class="w-full lg:w-7/12 px-4 md:px-10 lg:py-36">
                 <div class="flex flex-wrap justify-between items-center">
                     <div class="w-fit"><?= renderImg('footer-logo.png', 'logo', 'max-w-[181px]') ?></div>
                     <div class="w-fit">
@@ -277,14 +277,14 @@
                 <p class="text-center text-white capitalize text-xl md:text-2xl font-medium tracking-widest pt-6">Pristine Carpets, radient Space</p>
                 <div class="flex justify-center"><?= renderImg('form-logo.png', 'logo') ?></div>
                 <div class="flex flex-wrap justify-between items-center pt-5">
-                    <div class="w-1/5 md:w-fit px-1"><?= renderImg('25-years.png', 'logo') ?></div>
-                    <div class="w-1/5 md:w-fit px-1"><?= renderImg('australian-achiever.png', 'logo') ?></div>
-                    <div class="w-1/5 md:w-fit px-1"><?= renderImg('best-services.png', 'logo') ?></div>
-                    <div class="w-1/5 md:w-fit px-1"><?= renderImg('non-toxic.png', 'logo') ?></div>
-                    <div class="w-1/5 md:w-fit px-1"><?= renderImg('satisfaction-guarantee.png', 'logo') ?></div>
+                    <div class="w-1/5 lg:w-fit px-1 md:px-2"><?= renderImg('25-years.png', 'logo') ?></div>
+                    <div class="w-1/5 lg:w-fit px-1 md:px-2"><?= renderImg('australian-achiever.png', 'logo') ?></div>
+                    <div class="w-1/5 lg:w-fit px-1 md:px-2"><?= renderImg('best-services.png', 'logo') ?></div>
+                    <div class="w-1/5 lg:w-fit px-1 md:px-2"><?= renderImg('non-toxic.png', 'logo') ?></div>
+                    <div class="w-1/5 lg:w-fit px-1 md:px-2"><?= renderImg('satisfaction-guarantee.png', 'logo') ?></div>
                 </div>
             </div>
-            <div class="w-full md:w-4/12">
+            <div class="w-full lg:w-4/12">
                 <form action="./src/form.php" method="POST" class="bg-white rounded-[31px] drop-shadow-lg overflow-hidden">
                     <div class="py-10 px-4 md:p-14">
                         <div class="flex justify-center relative mb-10">
@@ -322,17 +322,17 @@
 
 <section class="faqs pt-24 pb-16 md:py-24">
     <div class="flex flex-wrap">
-        <div class="w-full md:w-1/2">
+        <div class="w-full lg:w-1/2 px-5">
             <div class="flex justify-end">
                 <div class="flex justify-center">
-                    <h2 class="text-dark font-grandmas-television text-3xl md:text-5xl relative">your<br />interest?
+                    <h2 class="text-dark font-grandmas-television text-3xl md:text-4xl lg:text-5xl relative">your<br />interest?
                         <p class="absolute font-vampiro-one text-primary text-3xl md:text-[50px] rotate-[-8.637deg] top-[-40px] left-[-100px]">What's</p>
                     </h2>
                 </div>
             </div>
             <?= renderImg('whats-your-interest.png', 'lib', 'w-full pt-10') ?>
         </div>
-        <div class="w-full md:w-1/2 px-4 md:px-14">
+        <div class="w-full lg:w-1/2 px-4 md:px-5 lg:px-14">
             <?php $faqs = [
                 [
                     'question' => 'How often should I have my carpets cleaned?',
@@ -356,7 +356,7 @@
                 ],
             ];
             ?>
-            <div class="w-full md:w-10/12">
+            <div class="w-full lg:w-10/12">
                 <div class="accordion">
                     <?php foreach ($faqs as $index => $faq) : ?>
                         <article class="accordion-card py-5 md:py-8 <?= (count($faqs) - 1) == $index ? '' : 'border-b border-black' ?>">
@@ -385,8 +385,8 @@
     <div class="container">
         <div class="flex justify-center">
             <div class="flex justify-center">
-                <h2 class="text-dark font-grandmas-television text-3xl md:text-5xl relative">happy clients
-                    <p class="absolute font-vampiro-one text-primary text-3xl md:text-[50px] rotate-[-8.637deg] top-[-40px] md:left-[-100px]">Our</p>
+                <h2 class="text-dark font-grandmas-television text-3xl md:text-4xl lg:text-5xl relative">happy clients
+                    <p class="absolute font-vampiro-one text-primary text-3xl md:text-[50px] rotate-[-8.637deg] top-[-40px] lg:left-[-100px]">Our</p>
                 </h2>
             </div>
         </div>
@@ -517,7 +517,7 @@
 </section>
 
 <section class="bg-primary">
-    <div id="cta_slider" class="font-grandmas-television text-lg md:text-3xl text-white py-4">
+    <div id="cta_slider" class="font-grandmas-television text-lg md:text-xl lg:text-3xl text-white py-4">
         <p>Call Us Today on <a href="tel:<?= $phone_number ?>" class="pl-2"><?= $phone_number ?></a></p>
         <p>Get Free quote today</p>
         <p>Carpet Cleaning Start From $89</p>
@@ -528,7 +528,7 @@
     <div class="container">
         <div class="flex flex-wrap gap-y-5">
             <div class="w-full lg:w-1/2 lg:px-2">
-                <article class="">
+                <article>
                     <a href="./"><?= renderImg('footer-logo.png', 'logo') ?></a>
                     <div class="py-5 md:py-9">
                         <table cellspacing="0" cellpadding="0" class="text-white text-sm md:text-base">

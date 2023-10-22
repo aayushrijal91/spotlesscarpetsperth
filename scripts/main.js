@@ -30,6 +30,17 @@ $('#brands_slider').slick({
     arrows: false,
     responsive: [
         {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                speed: 3000,
+                autoplaySpeed: 0,
+                autoplay: true,
+                cssEase: 'linear'
+            }
+        },
+        {
             breakpoint: 540,
             settings: {
                 slidesToShow: 2,
