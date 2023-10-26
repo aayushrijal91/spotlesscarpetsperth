@@ -24,7 +24,7 @@
                                         </svg>
                                     </a>
                                 </div>
-                                <div class="w-fit">
+                                <!-- <div class="w-fit">
                                     <a href="<?= $instagram ?>" target="_blank">
                                         <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M12.4983 24.9962C5.58142 25.0005 -0.00429581 19.4061 0.00440468 12.4718C0.0174554 5.42005 5.81198 -0.0351586 12.5505 0.0039936C19.4674 0.0431458 25.014 5.61581 25.014 12.6023C25.014 19.4104 19.3804 24.9875 12.494 24.9918L12.4983 24.9962ZM12.5114 20.0369C13.7512 19.9803 14.991 19.9673 16.2221 19.8585C17.81 19.7193 19.0759 18.6491 19.4718 17.0961C19.6414 16.4349 19.7023 15.7301 19.7023 15.0428C19.7067 13.0634 19.7328 11.0797 19.6066 9.10906C19.4848 7.16885 17.9666 5.71152 16.0133 5.64626C13.6598 5.56796 11.302 5.57231 8.94851 5.64626C7.06485 5.70717 5.55097 7.22105 5.40306 9.09166C5.2073 11.5278 5.2073 13.9726 5.40306 16.4088C5.55097 18.2489 6.96045 19.6758 8.79625 19.8498C10.0274 19.9673 11.2672 19.9716 12.507 20.0282L12.5114 20.0369Z" fill="#ED3D3D" />
@@ -35,7 +35,7 @@
                                             <path d="M12.5243 10.3619C13.8642 10.3619 14.9387 11.4277 14.9431 12.7546C14.9431 14.077 13.8599 15.1733 12.5417 15.1864C11.2062 15.1951 10.1056 14.0944 10.1143 12.7546C10.123 11.406 11.1758 10.3619 12.5243 10.3619Z" fill="#ED3D3D" />
                                         </svg>
                                     </a>
-                                </div>
+                                </div> -->
                                 <div class="w-fit">
                                     <a href="mailto:<?= $admin_email ?>">
                                         <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +88,7 @@
                     <p class="font-grandmas-television text-7xl md:text-[102px] leading-none text-center md:text-start">Style</p>
                     <div class="flex justify-center xl:hidden"><?= renderImg('promo-price.png', 'lib') ?></div>
                     <div class="flex justify-center md:pt-6">
-                        <a href="#form" class="flex items-center font-grandmas-television text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
+                        <a href="#form" class="flex items-center font-agressive text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
                     </div>
                 </article>
             </div>
@@ -147,7 +147,7 @@
                             We don't stop there – we take an extra step to ensure sanitisation and deodorisation, bestowing your premises with not just cleanliness, but a refreshing essence as well.
                         </p>
                     </article>
-                    <a href="#form" class="inline-flex items-center font-grandmas-television text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
+                    <a href="#form" class="inline-flex items-center font-agressive text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
                 </article>
             </div>
             <div class="w-full lg:w-5/12 relative hidden xl:block">
@@ -238,7 +238,7 @@
             <div><?= renderImg('kfc.png', 'logo') ?></div>
             <div><?= renderImg('bigw.png', 'logo') ?></div>
             <div><?= renderImg('toyota.png', 'logo') ?></div>
-            <div><?= renderImg('commonwealth_bank.png', 'logo') ?></div>
+            <div><?= renderImg('commbank.png', 'logo') ?></div>
         </div>
     </div>
 </section>
@@ -262,7 +262,7 @@
                                     </svg>
                                 </a>
                             </div>
-                            <div class="w-fit px-1">
+                            <!-- <div class="w-fit px-1">
                                 <a href="<?= $instagram ?>" target="_blank">
                                     <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12.4983 24.9962C5.58142 25.0005 -0.00429581 19.4061 0.00440468 12.4718C0.0174554 5.42005 5.81198 -0.0351586 12.5505 0.0039936C19.4674 0.0431458 25.014 5.61581 25.014 12.6023C25.014 19.4104 19.3804 24.9875 12.494 24.9918L12.4983 24.9962ZM12.5114 20.0369C13.7512 19.9803 14.991 19.9673 16.2221 19.8585C17.81 19.7193 19.0759 18.6491 19.4718 17.0961C19.6414 16.4349 19.7023 15.7301 19.7023 15.0428C19.7067 13.0634 19.7328 11.0797 19.6066 9.10906C19.4848 7.16885 17.9666 5.71152 16.0133 5.64626C13.6598 5.56796 11.302 5.57231 8.94851 5.64626C7.06485 5.70717 5.55097 7.22105 5.40306 9.09166C5.2073 11.5278 5.2073 13.9726 5.40306 16.4088C5.55097 18.2489 6.96045 19.6758 8.79625 19.8498C10.0274 19.9673 11.2672 19.9716 12.507 20.0282L12.5114 20.0369Z" fill="#ED3D3D" />
@@ -273,7 +273,7 @@
                                         <path d="M12.5243 10.3619C13.8642 10.3619 14.9387 11.4277 14.9431 12.7546C14.9431 14.077 13.8599 15.1733 12.5417 15.1864C11.2062 15.1951 10.1056 14.0944 10.1143 12.7546C10.123 11.406 11.1758 10.3619 12.5243 10.3619Z" fill="#ED3D3D" />
                                     </svg>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -316,7 +316,7 @@
                         </div>
                     </div>
 
-                    <button class="font-grandmas-television h-[57px] text-xl text-white bg-primary w-full" type="submit">Get a Free quote</button>
+                    <button class="font-agressive h-[57px] text-xl text-white bg-primary w-full" type="submit">Get a Free quote</button>
                 </form>
             </div>
         </div>
@@ -338,31 +338,33 @@
         <div class="w-full xl:w-1/2 px-4 md:px-5 lg:px-14">
             <?php $faqs = [
                 [
-                    'question' => 'How often should I have my carpets cleaned?',
-                    'answer' => 'On average household carpets should be cleaned at least once a year. In some cases (pets, children, allergies) carpets may require more frequent cleaning. Commercial cleaning services are usually performed more regularly due to the importance of image and hygiene in the workplace.'
-                ],
-                [
                     'question' => 'How can I keep my carpets looking nice?',
-                    'answer' => 'On average household carpets should be cleaned at least once a year. In some cases (pets, children, allergies) carpets may require more frequent cleaning. Commercial cleaning services are usually performed more regularly due to the importance of image and hygiene in the workplace.'
+                    'answer' => "<p>Maintaining the appearance of your carpets involves regular care. Vacuum your carpets at least once a week to remove loose dirt and debris. Also, consider professional carpet cleaning every 12-18 months to remove deep-seated stains and allergens, ensuring your carpets look and feel their best.</p>"
                 ],
                 [
                     'question' => 'Why do some carpet cleaners advertise extremely low prices and when they arrive to clean my carpets the price always increases?',
-                    'answer' => 'On average household carpets should be cleaned at least once a year. In some cases (pets, children, allergies) carpets may require more frequent cleaning. Commercial cleaning services are usually performed more regularly due to the importance of image and hygiene in the workplace.'
+                    'answer' => "<p>Unfortunately, some cleaners employ bait-and-switch tactics to lure customers with low prices. We believe in transparent pricing. Our quotes are upfront and comprehensive, so you know exactly what to expect. No hidden fees or surprises.</p>"
                 ],
                 [
                     'question' => 'Do you guarantee your work?',
-                    'answer' => 'On average household carpets should be cleaned at least once a year. In some cases (pets, children, allergies) carpets may require more frequent cleaning. Commercial cleaning services are usually performed more regularly due to the importance of image and hygiene in the workplace.'
+                    'answer' => "<p>Absolutely. We take pride in our work and stand by its quality. If you're not satisfied with the results, we will make it right. Your satisfaction is our priority, and our guarantee reflects our commitment to delivering exceptional service.</p>"
                 ],
                 [
                     'question' => 'What services do you provide?',
-                    'answer' => 'On average household carpets should be cleaned at least once a year. In some cases (pets, children, allergies) carpets may require more frequent cleaning. Commercial cleaning services are usually performed more regularly due to the importance of image and hygiene in the workplace.'
+                    'answer' => "<p>We offer a range of services to keep your home clean and fresh:</p>
+                    <ul>
+                    <li><b>Carpet Cleaning:</b> Our deep cleaning process restores your carpets to their original beauty, removing stains, dirt, and allergens.</li>
+                    <li><b>Tile & Grout Cleaning:</b> We rejuvenate your tile and grout, making them look new again, while also improving the cleanliness and hygiene of your surfaces.</li>
+                    <li><b>Wet Carpet Cleaning:</b> In the unfortunate event of water damage, our wet carpet cleaning service helps restore your carpets and prevent mold and odor issues.</li>
+                    </ul>
+                    <p>Choose us for these services, and experience the difference in your home's cleanliness and appearance.</p>"
                 ],
             ];
             ?>
             <div class="w-full 2xl:w-10/12">
                 <div class="accordion">
                     <?php foreach ($faqs as $index => $faq) : ?>
-                        <article class="accordion-card py-5 md:py-8 <?= (count($faqs) - 1) == $index ? '' : 'border-b border-black' ?> <?= $index == 0 ? 'active': '' ?>">
+                        <article class="accordion-card py-5 md:py-8 <?= (count($faqs) - 1) == $index ? '' : 'border-b border-black' ?> <?= $index == 0 ? 'active' : '' ?>">
                             <a href="javascript:void(0)" class="flex question items-center">
                                 <p class="text-xl md:text-[28px] font-bold flex-auto"><?= $faq['question'] ?></p>
                                 <div class="flex-none">
@@ -373,18 +375,68 @@
                                 </div>
                             </a>
 
-                            <p class="answer font-medium text-base md:text-lg pt-3 <?= $index !== 0 ? 'hidden' : '' ?>"><?= $faq['answer'] ?></p>
+                            <article class="answer font-medium text-base md:text-lg pt-3 <?= $index !== 0 ? 'hidden' : '' ?>"><?= $faq['answer'] ?></article>
                         </article>
                     <?php endforeach; ?>
                 </div>
 
-                <a href="#form" class="flex justify-center items-center text-center font-grandmas-television text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
+                <a href="#form" class="flex justify-center items-center text-center font-agressive text-white bg-primary h-[46px] py-2 px-8">Get a free quote</a>
             </div>
         </div>
     </div>
 </section>
 
 <section class="testimonials py-16" id="testimonials">
+    <?php $testimonials = [
+        [
+            'customer' => 'Jane M.',
+            'comment' => "I can't believe how amazing my carpets look after the cleaning from Spotless Carpet Cleaning. They got rid of stubborn stains I thought were impossible to remove. The service was prompt, and the results were beyond my expectations. I highly recommend them!"
+        ],
+        [
+            'customer' => 'John P.',
+            'comment' => "I was dreading the hassle of scrubbing my tile and grout until I discovered Spotless Carpet Cleaning. Their tile and grout cleaning service transformed my floors. They look brand new, and the whole process was quick and efficient. I'm a satisfied customer!"
+        ],
+        [
+            'customer' => 'Sarah R.',
+            'comment' => "When a water leak damaged my carpets, I thought they were ruined. Spotless Carpet Cleaning came to the rescue with their wet carpet cleaning service. Not only did they save my carpets, but they also prevented mold growth. I'm grateful for their quick response and expertise."
+        ],
+        [
+            'customer' => 'Mark D.',
+            'comment' => "I've used many carpet cleaning services over the years, but none compare to Spotless Carpet Cleaning. Their attention to detail and commitment to quality is unmatched. My carpets look and smell amazing. I won't trust anyone else with my carpets."
+        ],
+        [
+            'customer' => 'Laura S.',
+            'comment' => "I had neglected my tile and grout for too long, and it was in terrible shape. Spotless Carpet Cleaning did a fantastic job restoring my floors. The grout is back to its original color, and the tiles shine like new. I couldn't be happier with the results."
+        ],
+        [
+            'customer' => 'Michael B.',
+            'comment' => "Facing a wet carpet situation was stressful, but Spotless Carpet Cleaning made the recovery process smooth and efficient. They arrived promptly, assessed the damage, and within hours, my carpets were drying. Thanks to their expertise, I avoided costly replacements. Highly recommended!"
+        ],
+        [
+            'customer' => 'Simona M.',
+            'comment' => "I've tried several carpet cleaning services over the years, but Spotless Carpets Cleaning Perth stands out. They not only removed tough stains, but my carpets felt incredibly soft and fresh. A job well done!"
+        ],
+        [
+            'customer' => 'Robert L.',
+            'comment' => "Wow! Spotless Carpets Cleaning Perth brought my old, dingy tiles back to life. The grout is sparkling clean, and the tiles look brand new. I'm thrilled with the results and the friendly service."
+        ],
+        [
+            'customer' => 'Lisa H.',
+            'comment' => "Dealing with a flooded carpet was a nightmare, but Spotless Carpets Cleaning Perth made the process much easier. They arrived promptly, removed the water, and prevented mold growth. My carpets look as good as new!"
+        ],
+        [
+            'customer' => 'Paul R.',
+            'comment' => "Spotless Carpets Cleaning Perth exceeded my expectations. They not only cleaned my carpets thoroughly but also provided excellent customer service. I'm impressed with their attention to detail and professionalism."
+        ],
+        [
+            'customer' => 'Emily S.',
+            'comment' => "I had almost given up on my grubby tile floors until I discovered Spotless Carpets Cleaning Perth. Their tile and grout cleaning transformed my kitchen and bathroom. The results are fantastic!"
+        ],
+        [
+            'customer' => 'Mark B.',
+            'comment' => "When my basement flooded, I was stressed. Spotless Carpets Cleaning Perth made the process stress-free. They arrived quickly, handled the wet carpets, and saved my day. I couldn't be happier!"
+        ],
+    ]; ?>
     <div class="container">
         <div class="flex justify-center">
             <div class="flex justify-center">
@@ -407,13 +459,9 @@
                     </div>
                     <div class="w-full md:w-10/12">
                         <div id="testimonial_slider">
-                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
-                            <div class="text-base md:text-2xl font-medium py-2">You’re prompt, dependable and quality service makes my job easier and brings peace of mind knowing that those I refer to you will be handled with the utmost care and professionalism.</div>
+                            <?php foreach ($testimonials as $testimonial) : ?>
+                                <div class="text-base md:text-2xl font-medium py-2"><?= $testimonial['comment'] ?></div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
@@ -424,69 +472,14 @@
         </div>
 
         <div id="client_slider" class="pt-5">
+            <?php foreach($testimonials as $testimonial) : ?>
             <article>
-                <div class="name text-6xl">M</div>
+                <div class="name text-6xl"><?= substr($testimonial['customer'], 0, 1); ?></div>
                 <div class="info pl-7">
-                    <p class="text-3xl font-bold">Roberto</p>
-                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
+                    <p class="text-3xl font-bold"><?= $testimonial['customer'] ?></p>
                 </div>
             </article>
-
-            <article>
-                <div class="name text-6xl">G</div>
-                <div class="info pl-7">
-                    <p class="text-3xl font-bold">Roberto</p>
-                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
-                </div>
-            </article>
-
-            <article>
-                <div class="name text-6xl">S</div>
-                <div class="info pl-7">
-                    <p class="text-3xl font-bold">Roberto</p>
-                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
-                </div>
-            </article>
-
-            <article>
-                <div class="name text-6xl">R</div>
-                <div class="info pl-7">
-                    <p class="text-3xl font-bold">Roberto</p>
-                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
-                </div>
-            </article>
-
-            <article>
-                <div class="name text-6xl">SM</div>
-                <div class="info pl-7">
-                    <p class="text-3xl font-bold">Roberto</p>
-                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
-                </div>
-            </article>
-
-            <article>
-                <div class="name text-6xl">CJ</div>
-                <div class="info pl-7">
-                    <p class="text-3xl font-bold">Roberto</p>
-                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
-                </div>
-            </article>
-
-            <article>
-                <div class="name text-6xl">M</div>
-                <div class="info pl-7">
-                    <p class="text-3xl font-bold">Roberto</p>
-                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
-                </div>
-            </article>
-
-            <article>
-                <div class="name text-6xl">R</div>
-                <div class="info pl-7">
-                    <p class="text-3xl font-bold">Roberto</p>
-                    <p class="text-[#9c9c9c] leading-none">Elders Real Estate</p>
-                </div>
-            </article>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
@@ -520,7 +513,7 @@
 </section>
 
 <section class="bg-primary">
-    <div id="cta_slider" class="font-grandmas-television text-lg md:text-xl lg:text-3xl text-white py-4">
+    <div id="cta_slider" class="font-agressive text-lg md:text-xl lg:text-3xl text-white py-4">
         <p>Call Us Today on <a href="tel:<?= $phone_number ?>" class="pl-2"><?= $phone_number ?></a></p>
         <p>Get Free quote today</p>
         <p>Carpet Cleaning Start From $89</p>
@@ -601,7 +594,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="w-fit">
+                        <!-- <div class="w-fit">
                             <a href="<?= $instagram ?>" target="_blank">
                                 <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.4983 24.9962C5.58142 25.0005 -0.00429581 19.4061 0.00440468 12.4718C0.0174554 5.42005 5.81198 -0.0351586 12.5505 0.0039936C19.4674 0.0431458 25.014 5.61581 25.014 12.6023C25.014 19.4104 19.3804 24.9875 12.494 24.9918L12.4983 24.9962ZM12.5114 20.0369C13.7512 19.9803 14.991 19.9673 16.2221 19.8585C17.81 19.7193 19.0759 18.6491 19.4718 17.0961C19.6414 16.4349 19.7023 15.7301 19.7023 15.0428C19.7067 13.0634 19.7328 11.0797 19.6066 9.10906C19.4848 7.16885 17.9666 5.71152 16.0133 5.64626C13.6598 5.56796 11.302 5.57231 8.94851 5.64626C7.06485 5.70717 5.55097 7.22105 5.40306 9.09166C5.2073 11.5278 5.2073 13.9726 5.40306 16.4088C5.55097 18.2489 6.96045 19.6758 8.79625 19.8498C10.0274 19.9673 11.2672 19.9716 12.507 20.0282L12.5114 20.0369Z" fill="#ED3D3D" />
@@ -612,7 +605,7 @@
                                     <path d="M12.5243 10.3619C13.8642 10.3619 14.9387 11.4277 14.9431 12.7546C14.9431 14.077 13.8599 15.1733 12.5417 15.1864C11.2062 15.1951 10.1056 14.0944 10.1143 12.7546C10.123 11.406 11.1758 10.3619 12.5243 10.3619Z" fill="#ED3D3D" />
                                 </svg>
                             </a>
-                        </div>
+                        </div> -->
                         <div class="w-fit">
                             <a href="mailto:<?= $admin_email ?>">
                                 <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">

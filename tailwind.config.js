@@ -25,7 +25,8 @@ module.exports = {
       fontFamily: {
         'proxima-nova': ['Proxima Nova', 'sans-serif'],
         'grandmas-television': ['Grandmas Television', 'sans-serif'],
-        'vampiro-one': ['Vampiro One', 'sans-serif']
+        'vampiro-one': ['Vampiro One', 'sans-serif'],
+        'agressive': ['Agressive', 'sans-serif']
       }
     },
   },

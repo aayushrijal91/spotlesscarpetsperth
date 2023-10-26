@@ -3,13 +3,13 @@ include __DIR__ . '/env.php';
 
 $site = "Spotless Carpet Cleaning";
 $phone_number = "1300 606 543";
-$admin_email = 'arijal@aiims.com.au';
+$admin_email = 'arijal@aiims.com.au'; // 'info@spotlesscleaningsolutions.com.au';
 $bcc_email = "";
-$no_reply_email = 'info@website.com.au';
+$no_reply_email = 'info@spotlesscleaningsolutions.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
-$facebook = "";
-$instagram = "";
+$facebook = "https://www.facebook.com/Spotless-Cleaning-Solutions-199935896712524/";
+// $instagram = "";
 
 function renderImg($filename, $folder, $classname = "")
 {
