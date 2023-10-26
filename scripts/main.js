@@ -107,7 +107,7 @@ function validateForm() {
     return true;
 }
 
-$("#submission-form").on('submit', function (e) {
-    e.preventDefault();
+$("#submission-form").on('submit', function () {
+    
     return validateForm();
 });
