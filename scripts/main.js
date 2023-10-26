@@ -90,4 +90,24 @@ $('#testimonial_slider').slick({
     slidesToScroll: 1,
     arrows: false,
     asNavFor: '#client_slider',
-})
+});
+
+function validateForm() {
+    let phoneInput = $('#contactNumber').val();
+    let re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+    if(!re.test(phoneInput)) {
+        $('#phoneError').fadeIn();
+
+        return false;
+    } else {
+        $('#phoneError').fadeOut();
+    }
+
+    return true;
+}
+
+$("#submission-form").on('submit', function (e) {
+    e.preventDefault();
+    return validateForm();
+});

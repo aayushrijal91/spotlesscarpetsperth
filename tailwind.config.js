@@ -20,7 +20,8 @@ module.exports = {
         'primary': '#ED3D3D',
         'secondary': '#acce31',
         'light': '#f0f0f0',
-        'dark': '#1a1a1a'
+        'dark': '#1a1a1a',
+        red: 'red',
       },
       fontFamily: {
         'proxima-nova': ['Proxima Nova', 'sans-serif'],

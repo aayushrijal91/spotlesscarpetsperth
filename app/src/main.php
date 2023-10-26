@@ -288,7 +288,9 @@
                 </div>
             </div>
             <div class="w-full lg:w-5/12 2xl:w-4/12">
-                <form action="./src/form.php" method="POST" class="bg-white rounded-[31px] drop-shadow-lg overflow-hidden">
+                <form action="./src/form" method="POST" class="bg-white rounded-[31px] drop-shadow-lg overflow-hidden" id="submission-form">
+                <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
+
                     <div class="py-10 px-4 md:p-14 lg:px-5 xl:p-14">
                         <div class="flex justify-center relative mb-10">
                             <h3 class="font-grandmas-television text-2xl md:text-3xl text-center">Get a <span class="text-primary">free</span> quote</h3>
@@ -301,8 +303,9 @@
                         </div>
 
                         <div class="input-group mb-5 md:mb-8 lg:mb-5 xl:mb-8">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone" required>
+                            <label for="contactNumber">Phone</label>
+                            <input type="tel" id="contactNumber" name="phone" class="form-control" placeholder="Phone" required>
+                            <p class="text-sm text-red hidden" id="phoneError">Invalid Phone Number</p>
                         </div>
 
                         <div class="input-group mb-5 md:mb-8 lg:mb-5 xl:mb-8">
